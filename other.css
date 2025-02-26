@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+    background: linear-gradient(135deg, #ff6f61, #ffcccb),
+                url('heheh.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: #4a4a4a;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(0, 0, 0, 0.363);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(252, 76, 76, 0.5);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffee00;
+}
+
+/* Profile Photo */
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff6f61;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #535353be;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-family: monospace;
+}
+
+.button:hover {
+    background-color: #ff000069;
+}
+
+/* Gallery inside card */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Ensure images fit inside the card */
+.gallery-photo {
+    width: 45%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #f3ef0880;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-photo {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* Desktop Optimization */
+@media (min-width: 1024px) {
+    .card {
+        max-width: 1000px; /* Increase card size */
+        padding: 50px; /* Add more space */
+    }
+
+    h2 {
+        font-size: 3rem; /* Increase font size */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .gallery-photo {
+        width: 50%; /* Enlarge images */
+        max-width: 400px;
+    }
+
+    .button {
+        font-size: 1.5rem; /* Make button text bigger */
+        padding: 15px 30px;
+    }
+}

@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffdde1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px; /* Default size for mobile */
+    margin: 20px auto; /* Adds space on both sides */
+}
+
+h2 {
+    color: #ff4d6d;
+}
+
+#password {
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px;
+    border: 2px solid #ff4d6d;
+    border-radius: 5px;
+}
+
+#message {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.num-btn,
+#clear,
+#ok,
+#reset {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #ff4d6d;
+    color: white;
+    transition: 0.3s;
+}
+
+.num-btn:hover,
+#clear:hover,
+#ok:hover,
+#reset:hover {
+    background: #ff7597;
+}
+
+#clear,
+#ok {
+    background: gray;
+}
+
+/* Reset button styles */
+#reset {
+    width: 100%;
+    margin-top: 15px;
+    background: black;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes loadingDots {
+    0% { content: "Loading"; }
+    25% { content: "Loading."; }
+    50% { content: "Loading.."; }
+    75% { content: "Loading..."; }
+    100% { content: "Loading"; }
+}
+
+.congrats-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkpink;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.loading-animation::after {
+    content: "Loading";
+    display: inline-block;
+    animation: loadingDots 1.5s infinite steps(1);
+}
+
+/* ------ Adjust for Larger Screens (Laptops & PCs) ------ */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px; /* Increase container size */
+        padding: 30px;
+    }
+
+    #password {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .num-btn,
+    #clear,
+    #ok,
+    #reset {
+        font-size: 24px; /* Bigger buttons for easier clicking */
+        padding: 15px;
+    }
+
+    .buttons {
+        gap: 15px; /* More spacing between buttons */
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    #message {
+        font-size: 1.2rem;
+    }
+}

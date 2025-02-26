@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffdde1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px; /* Adjusted width */
+    width: 90%; /* Makes it responsive */
+}
+
+h2 {
+    color: #ff4d6d;
+}
+
+p {
+    font-size: 1.2rem;
+    color: red;
+    margin-bottom: 30px; /* Adds space between text and button */
+}
+
+
+.button {
+    font-size: 20px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #ff4d6d;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px; 
+}
+
+.button:hover {
+    background: #ff7597;
+}
+
+.gif-image {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Ensures a perfect circle */
+    display: block; /* Centers the GIF */
+    margin: 0 auto 40px; /* Centers and adds space below */
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #ff4d6d; /* Adds a border around the image */
+    object-fit: cover; /* Ensures the GIF fills the circular shape */
+}

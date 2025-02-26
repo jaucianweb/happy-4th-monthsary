@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+    background: linear-gradient(135deg, #ff6e61, #ffcccb),
+                url('heheh.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #4a4a4a;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #ffee00;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.363);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(252, 76, 76, 0.5); 
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #ff6e61;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #535353be;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-family: monospace;
+}
+
+.button:hover {
+    background-color: #ff000069;
+}
+/* ------- Larger Screens (Laptops & PCs) ------- */
+@media (min-width: 768px) {
+    .card {
+        max-width: 800px; /* Make the card bigger */
+        padding: 50px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+        border-width: 12px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 2.4rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+    }
+}
+
+/* ------- Extra Large Screens (Desktops) ------- */
+@media (min-width: 1024px) {
+    .card {
+        max-width: 700px;
+        padding: 50px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+        border-width: 7px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    .button {
+        font-size: 1.3rem;
+        padding: 15px 30px;
+    }
+}

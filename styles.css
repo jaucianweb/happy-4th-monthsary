@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+    background: linear-gradient(135deg, #ff6f61, #ffcccb),
+                url('heheh.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #4a4a4a;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.363);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(252, 76, 76, 0.5);
+    max-width: 400px; /* Default for mobile */
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff6f61;
+    margin: 20px auto;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 1.9rem;
+    padding: 0px;
+    color: #ffee00;
+    margin-bottom: 1px;
+    font-family: 'Great Vibes', cursive;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #535353be;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-family: monospace;
+}
+
+.button:hover {
+    background-color: #ff000069;
+}
+
+.highlight {
+    color: #ffee00;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.6);
+}
+
+/* Smartphones (small screens) */
+@media (max-width: 600px) {
+    .card {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .photo {
+        width: 120px;
+        height: 120px;
+        border-width: 5px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Tablets (medium screens) */
+@media (min-width: 601px) and (max-width: 1023px) {
+    .card {
+        max-width: 80%;
+        padding: 30px;
+    }
+
+    .photo {
+        width: 150px;
+        height: 150px;
+        border-width: 8px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .button {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Laptops & Desktops */
+@media (min-width: 1024px) {
+    .card {
+        max-width: 700px;
+        padding: 50px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+        border-width: 7px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    .button {
+        font-size: 1.3rem;
+        padding: 15px 30px;
+    }
+}

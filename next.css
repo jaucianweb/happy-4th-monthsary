@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+    background: linear-gradient(135deg, #ff6f61, #ffcccb),
+                url('heheh.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: #4a4a4a;
+    background-size: cover;  /* Ensures full coverage */
+    background-position: center;
+    background-attachment: fixed; /* Prevents scrolling issues */
+}
+
+/* Card Container */
+.container {
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(252, 76, 76, 0.5);
+    max-width: 90%;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;  /* Center the card */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h1 {
+    color: #ffee00;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ffee00;
+}
+
+/* Profile Photo */
+.photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #ff6f61;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #535353be;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease;
+    font-family: monospace;
+}
+
+.button:hover {
+    background-color: #ff000069;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 layout for mobile */
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 250px;
+}
+
+.gallery-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 3px solid #f3ef0880;
+    object-fit: cover;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .card {
+        width: 95%;
+        max-width: 95%;
+        padding: 20px;
+        margin: 10px auto; /* Center the card */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .button {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 200px;
+    }
+
+    .gallery-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Desktop & Laptop Optimization */
+@media (min-width: 1024px) {
+    .card {
+        max-width: 1000px;
+        padding: 80px;
+        margin: 40px auto; /* Extra spacing on larger screens */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .photo {
+        width: 250px;
+        height: 250px;
+        border-width: 10px;
+    }
+
+    .button {
+        font-size: 1.8rem;
+        padding: 20px 40px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 500px;
+        gap: 15px;
+    }
+
+    .gallery-photo {
+        width: 180px;
+        height: 180px;
+        border-width: 5px;
+    }
+}
